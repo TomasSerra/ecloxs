@@ -1,31 +1,119 @@
 *{
   scroll-behavior: smooth;
 }
-body{
-  background-color: rgb(0, 0, 0);
+
+@font-face {
+  font-family: "Circular Black";
+  src: url("./fuentes/CircularStd-Black.otf");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./fuentes/BebasNeue\ Light.otf");
+}
+
+.body{
+  background-color: #111111;
 }
 
 .header{
-  background-color: #000000;
+  background-color: #111111;
   text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 5px;
+}
+
+.navbar img{
+  width: 10%;
 }
 
 .banner-inicio{
   background-color: #111111;
   width: 100%;
+	height: 500px;
+	background-image: url(./img/Reloj1_Mesa\ de\ trabajo\ 1.png);
+	background-size: 500px;
+  background-attachment: fixed;
+  background-position-x: 110%;
+  background-position-y: 90%;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+.banner-inicio h2{
+  padding-top: 15%;
+  padding-left: 7%;
+  font-size: 400%;
+  font-family: "Circular Black";
+}
+
+.banner-inicio p{
+  padding-top: 0%;
+  padding-left: 7%;
+  font-size: 300%;
+  font-family: "Circular Black";
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.header li:not(:first-child){
+  margin-left: 10rem;
 }
 
 .seccion1{
   background-color: #52b687;
   width: 100%;
+  height:fit-content;
 }
 
-.scaracteristicas{
+.seccion1 p{
+  color: white;
+  font-size: 140%;
+  padding-right: 10%;
+  text-align: justify;
+}
+
+.seccion1 a{
+  margin-top: 5%;
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  background-color: white;
+  color: #52b687;
+  border-radius: 0px;
+  font-size: 25px;
+  font-family: "Circular Black";
+}
+
+.seccion1 a:hover{
+  background-color: #ffffffd3;
+  color: #52b687;
+}
+
+.seccion1 img{
+  width: 400px;
+  padding-top: 14%;
+  padding-bottom: 14%;
+  padding-left: 15%;
+  padding-right: 8%;
+}
+
+.caracteristicas{
   background-color: #111111;
   width: 100%;
 }
 
-.seccion1{
+.seccion2{
   background-color: #111111;
   width: 100%;
 }
