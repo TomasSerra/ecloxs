@@ -63,7 +63,13 @@
     $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     $(".zoom").css({
-        width: (100 + scroll/10) + "%"
+      "backgroundSize": (500 + scroll/10) + "px"
+    })
+    $(".zoom h2").css({
+      "font-size": (400 + scroll/20) + "%",
+    })
+    $(".zoom p").css({
+      "font-size": (300 + scroll/20) + "%"
     })
   })
   </script>
