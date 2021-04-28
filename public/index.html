@@ -44,7 +44,7 @@
 
     <div class="seccion1">
       <div class="row align-items-center">
-        <div class="col-md-12 col-lg-4 columna-reloj">
+        <div class="col-md-12 col-lg-4 columna-reloj zoom">
         <img src="./img/Reloj2_Mesa de trabajo 1.png">
       </div>
       <div class="col-md-12 col-lg-8 texto-seccion1">
@@ -71,6 +71,10 @@
     $(".zoom p").css({
       "font-size": (300 + scroll/20) + "%"
     })
+    $(".zoom img").css({
+      WebkitTransform: 'rotate(' + 0 + scroll/10 + 'deg)'
+    })
+
   })
   </script>
   

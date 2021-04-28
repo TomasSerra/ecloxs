@@ -77,8 +77,8 @@
 
 .seccion1{
   background-color: #52b687;
-  width: 100%;
-  height: 500px;
+  width: 105%;
+  height: fit-content;
   position: relative;
   top: 450px;
   height:fit-content;
@@ -87,8 +87,9 @@
 .seccion1 p{
   color: white;
   font-size: 140%;
-  padding-right: 10%;
+  padding-right: 12%;
   text-align: justify;
+
 }
 
 .seccion1 a{
@@ -127,6 +128,8 @@
 .seccion2{
   background-color: #111111;
   width: 100%;
+  height: 1000px;
+  position: relative;
 }
 
 .footer{
