@@ -37,7 +37,7 @@
       </div>
     </nav>
 
-    <div class="banner-inicio">
+    <div class="banner-inicio zoom">
       <h2>FRASE PARA BANNER</h2>
       <p>Subtitulo para banner</p>
     </div>
@@ -57,5 +57,16 @@
     </div>
     </div>
   </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    $(".zoom").css({
+        width: (100 + scroll/10) + "%"
+    })
+  })
+  </script>
+  
 </html>
 
