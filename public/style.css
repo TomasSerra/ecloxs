@@ -73,6 +73,42 @@
   height: 500px;
   position: relative;
   top: 450px;
+  height:fit-content;
+}
+
+.seccion1 p{
+  color: white;
+  font-size: 140%;
+  padding-right: 10%;
+  text-align: justify;
+}
+
+.seccion1 a{
+  margin-top: 5%;
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  background-color: white;
+  color: #52b687;
+  border-radius: 0px;
+  font-size: 25px;
+  font-family: "Circular Black";
+}
+
+.seccion1 a:hover{
+  background-color: #ffffffd3;
+  color: #52b687;
+}
+
+.seccion1 img{
+  width: 400px;
+  padding-top: 14%;
+  padding-bottom: 14%;
+  padding-left: 15%;
+  padding-right: 8%;
 }
 
 .caracteristicas{
