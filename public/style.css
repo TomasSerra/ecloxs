@@ -63,12 +63,14 @@
   font-size: 20px;
 }
 
-.links a:hover{
+.links a{
   opacity: 100%;
+  color: white;
+  transition: 0.5s;
 }
 
-.links a{
-  opacity: 70%;
+.links a:hover{
+  color: #52b687;
 }
 
 .header li:not(:first-child){
