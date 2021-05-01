@@ -122,9 +122,48 @@
   padding-right: 8%;
 }
 
+.container-caracteristicas{
+  padding: 0;
+  margin-left: -7%;
+}
+
 .caracteristicas{
+  width: 105%;
   background-color: #111111;
-  width: 100%;
+  background-image: url(./img/banner-caracteristicas_Mesa\ de\ trabajo\ 1.jpg);
+  background-size: 90%;
+  object-fit: cover;
+  height: 850px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position-x: 40%;
+  background-position-y: -20%;
+  top:450px;
+}
+
+.caracteristicas img{
+  margin-top: 11%;
+  margin-left: 40%;
+  width: 25%;
+  
+}
+
+.texto-caracteristicas{
+  background-color: #52b687;
+  width: 40%;
+  height: fit-content;
+  text-align: center;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  margin-left: 32%;
+}
+
+.texto-caracteristicas h2{
+  color: #111111;
+  padding: 5%;
+  font-size: 300%;
+  font-family: "Circular Black";
+  text-align: center;
 }
 
 .seccion2{

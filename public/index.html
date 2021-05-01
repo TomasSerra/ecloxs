@@ -56,6 +56,16 @@
       
     </div>
     </div>
+
+    <div class="caracteristicas">
+      <div class="container-caracteristicas">
+        <div class="texto-caracteristicas">
+        <h2>CARACTERISTICAS</h2>
+      </div>
+      <img class="giro-reloj" src="./img/Reloj2_Mesa de trabajo 1.png"/>
+      </div>
+      
+    </div>
   </body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -71,9 +81,11 @@
     $(".zoom p").css({
       "font-size": (300 + scroll/20) + "%"
     })
-    $(".zoom img").css({
-      WebkitTransform: 'rotate(' + 0 + scroll/10 + 'deg)'
+    $(".giro-reloj").css({
+      WebkitTransform: 'rotate(' + 90 + scroll/30 + 'deg)'
     })
+    
+
 
   })
   </script>
