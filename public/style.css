@@ -179,17 +179,44 @@
   height: 1000px;
   top: 400px;
   position: relative;
+  display: flex;
+}
+
+.titulo{
+  width: 25%;
+  font-size: 150px;
+  color: #52b687;
+  font-family: "Circular Black";
+  margin-left: 40px;
+  margin-top: 20px;
+  line-height: 200px;
+}
+
+.seccion2 p{
+  font-size: 50px;
+  color: #ffffff;
+  font-family: "Circular Black";
+  margin-left: 100px;
+}
+
+.fondo-verde p:first-child
+{
+  margin-top: 150px;
+}
+
+.fondo-verde p:not(:first-child)
+{
+  margin-top: 50px;
 }
 
 .fondo-verde{
-  width: 900px; 
-  height: 500px; 
+  width: 1000px; 
+  height: 600px; 
   background: #52b687;
   position: absolute;
   right: 0px;
   left: auto;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 100px;
 }
 
 
