@@ -219,6 +219,71 @@
   border-top-left-radius: 100px;
 }
 
+.container-productos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carta{
+  width: 600px;
+  height: 400px;
+  background-color: #52b687;
+  margin-top: 200px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.carta h2{
+  margin-top: 10px;
+  color: white;
+  font-size: 300%;
+  margin-left: 20px;
+  font-family: "Circular Black";
+}
+
+.carta p{
+  color: #111111;
+  font-size: 150%;
+  margin-left: 20px;
+  font-family: "Circular Black";
+}
+
+.carta h6{
+  color: #1b4332;
+  font-size: 100%;
+  margin-left: 20px;
+  font-family: "Circular Black";
+  text-align: left;
+}
+
+.carta img{
+  width: 250px;
+  height: 250px;
+  margin-top: 70px;
+  margin-right: 500px;
+  margin-left: auto;
+}
+
+.boton-compra{
+  position: absolute;
+  background-color: #111111;
+  color: white;
+  padding:20px 80px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: "Circular Black";
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px
+}
+
+.boton-compra:hover{
+  background-color: #1f1f1f;
+  color: white;
+  cursor: pointer;
+}
 
 .footer{
   background-color: #000000;
