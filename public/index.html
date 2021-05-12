@@ -15,7 +15,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark header">
       <div class="container-fluid">
-        <img src="./img/logo.png"/>
+        <img src="./vectores/logotipo.svg"/>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,7 +25,7 @@
               <a class="nav-link active" href="#">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="#">COMPRAR</a>
+              <a class="nav-link"  href="comprar.html">COMPRAR</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">NOSOTROS</a>
@@ -65,30 +65,48 @@
       </div>
       <img class="giro-reloj" src="./img/Reloj2_Mesa de trabajo 1.png"/>
       </div>
-      
     </div>
+
+    <div class="seccion2">
+      <div class="titulo">RECI<br>CLA<br>DO</div>
+      <div class="fondo-verde">
+        <p>- Texto sobre como reciclamos</p>
+        <p>- Beneficios al medio ambiente</p>
+        <p>- Texto extra</p>
+      </div>
+    </div>
+
   </body>
 
   
   <script>
+    window.onload=horScroll;
     $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    $(".zoom").css({
-      "backgroundSize": (500 + scroll/10) + "px"
-    })
-    $(".zoom h2").css({
-      "font-size": (400 + scroll/20) + "%",
-    })
-    $(".zoom p").css({
-      "font-size": (300 + scroll/20) + "%"
-    })
-    $(".giro-reloj").css({
-      WebkitTransform: 'rotate(' + 90 + scroll/30 + 'deg)'
-    })
-    
+      var scroll = $(window).scrollTop();
+      $(".zoom").css({
+        "backgroundSize": (500 + scroll/10) + "px"
+      })
+      $(".zoom h2").css({
+        "font-size": (400 + scroll/20) + "%",
+      })
+      $(".zoom p").css({
+        "font-size": (300 + scroll/20) + "%"
+      })
+      $(".giro-reloj").css({
+        WebkitTransform: 'rotate(' + 90 + scroll/30 + 'deg)'
+      })
 
+    });
 
-  })
+    function horScroll() {
+      var $body = $(document);
+      $body.bind('scroll', function() {
+        // "Desactivar" el scroll horizontal
+        if ($body.scrollLeft() !== 0) {
+            $body.scrollLeft(0);
+        }
+      })
+    }
   </script>
   
 </html>
