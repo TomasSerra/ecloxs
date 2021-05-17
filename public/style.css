@@ -298,15 +298,15 @@ footer ul{
   list-style:none;
   justify-content: space-around;
   flex-wrap: wrap;
-  font-size: 20px;
   padding-top: 60px;
 }
 
 footer a{
   text-decoration: none;
   color: #52b687;
-  transition: 0.5s;
+  transition: 0.2s;
   font-family: "Circular Black";
+  font-size: 20px;
 }
 
 footer h2{
@@ -333,7 +333,8 @@ footer img{
 }
 
 footer a:hover{
-  color: #1b4332;
+  color: #52b687;
+  font-size: 23px;
 }
 
 footer svg{
