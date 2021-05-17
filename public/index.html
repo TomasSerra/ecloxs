@@ -220,20 +220,35 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
     window.onload=horScroll;
+    var isChrome = window.chrome; 
+    if(isChrome) { 
+     
+    } else {
+    
+    } 
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
-      $(".zoom").css({
-        "backgroundSize": (500 + scroll/10) + "px"
-      })
-      $(".zoom h2").css({
-        "font-size": (400 + scroll/20) + "%",
-      })
-      $(".zoom p").css({
-        "font-size": (300 + scroll/20) + "%"
-      })
-      $(".giro-reloj").css({
-        WebkitTransform: 'rotate(' + 90 + scroll/30 + 'deg)'
-      })
+      var isChrome = window.chrome;  
+
+      if(scroll <= 250 && isChrome)
+      {
+        $(".zoom").css({
+          "backgroundSize": (500 + scroll/10) + "px",
+        })
+        $(".zoom h2").css({
+          "font-size": (400 + scroll/20) + "%",
+        })
+        $(".zoom p").css({
+         "font-size": (300 + scroll/20) + "%"
+        })
+      }
+      if(scroll >= 400 && scroll <= 1400)
+      {
+        $(".giro-reloj").css({
+          WebkitTransform: 'rotate(' + 90 + scroll/30 + 'deg)'
+        })
+      }
+      
 
     });
 
