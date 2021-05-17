@@ -188,7 +188,7 @@
   color: #52b687;
   font-family: "Circular Black";
   margin-left: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
   line-height: 200px;
 }
 
@@ -211,7 +211,7 @@
 
 .fondo-verde{
   width: 1000px; 
-  height: 600px; 
+  height: 700px; 
   background: #52b687;
   position: absolute;
   right: 0px;
