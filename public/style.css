@@ -352,6 +352,48 @@ footer svg{
   justify-content: center;
 }
 
+/* NOSOTROS */
+
+.titulo-nosotros{
+  margin-top: 120px;
+  font-family: "Circular Black";
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #52b687;
+  padding: 20px;
+  font-size: 100px;
+  color: #111111;
+  border-radius: 30px;
+  text-align: center;
+  width: 50%;
+}
+
+.seccion-nosotros{
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+.seccion-nosotros h3{
+  font-size: 60px;
+  color: #52b687;
+  font-family: "Circular Black";
+}
+
+.seccion-nosotros p{
+  padding-top: 20px;
+  font-size: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.seccion-nosotros hr{
+  padding-top: 5px;
+  font-size: 10px;
+  color: #52b687;
+  width: 50%;
+  opacity: 100%;
+}
 /* LINKS HEADER */
 
 @media (max-width: 1200px)
