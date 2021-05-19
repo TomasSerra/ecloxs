@@ -319,15 +319,15 @@
   }
 }
 
-@media (max-width: 800px)
+@media (max-width: 900px)
 {
   .carta{
-    width: 90%;
+    width: 95%;
   }
 }
 
 
-@media (max-width: 650px)
+@media (max-width: 800px)
 {
   .carta:not(:last-child){
     width: 95%;
@@ -353,11 +353,15 @@
   }
 
   .carta img{
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .columna-textos{
     width: 48%;
+  }
+
+  .columna-imagen{
+    height: 200px;
   }
 
   .boton-compra{
