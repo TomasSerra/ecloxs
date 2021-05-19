@@ -36,29 +36,29 @@
             </div>
             </div>
         </nav>
-        <div class="container-productos">
+        <div class="container-productos container-fluid">
             <div class="carta">
-                <div class="contenido row">
-                    <div class= "col-5">
+                <div class="contenido">
+                    <div class= "columna-textos">
                         <h2>Reloj 1</h2>
                         <p>$1499,00</p>
                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus velit animi, sint voluptatibus adipisci fugit? Nobis dolores atque veritatis. Expedita harum labore dolores atque illo possimus explicabo autem animi nihil.</h6>
                         <a class="boton-compra" href="reloj1.html">Ver</a>
                     </div>
-                    <div class= "col-7">
+                    <div class= "columna-imagen">
                         <img src="./img/Reloj1_Mesa de trabajo 1.png">
                     </div>
                 </div>
             </div>
             <div class="carta">
-                <div class="contenido row">
-                    <div class= "col-5">
+                <div class="contenido">
+                    <div class= "columna-textos">
                         <h2>Reloj 2</h2>
                         <p>$1499,00</p>
                         <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus velit animi, sint voluptatibus adipisci fugit? Nobis dolores atque veritatis. Expedita harum labore dolores atque illo possimus explicabo autem animi nihil.</h6>
                         <a class="boton-compra" href="reloj2.html">Ver</a>
                     </div>
-                    <div class= "col-7">
+                    <div class= "columna-imagen">
                         <img src="./img/Reloj2_Mesa de trabajo 1.png">
                     </div>
                 </div>
@@ -70,14 +70,18 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js" integrity="sha512-KpoM4e9LSWBKqs4St2ApIcfKNdj7Cd7+PJQYx0QVjrdB5P/ALqHEzF4CLijKlvgNeS9luI2KWI1foQSGPBHfQg==" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        VanillaTilt.init(document.querySelectorAll(".carta"), {
+        if(screen.width >= 700)
+        {
+            VanillaTilt.init(document.querySelectorAll(".carta"), {
             max: 10,
             speed: 400,
-        });
-        VanillaTilt.init(document.querySelectorAll(".imagen-producto"), {
-            max: 20,
-            speed: 500,
-        });
+            });
+            VanillaTilt.init(document.querySelectorAll(".imagen-producto"), {
+                max: 20,
+                speed: 500,
+            });
+        }
+        
     </script>
   
 </html>
