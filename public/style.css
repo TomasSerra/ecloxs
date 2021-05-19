@@ -240,13 +240,25 @@
   flex-wrap: wrap;
 }
 
-.carta{
-  width: 600px;
-  height: 400px;
-  background-color: #52b687;
-  margin-top: 170px;
-  border-radius: 20px;
+.contenido{
   display: flex;
+  flex-wrap: wrap;
+}
+
+.carta{
+  width: 43%;
+  height: fit-content;
+  background-color: #52b687;
+  margin-top: 190px;
+  border-radius: 20px;
+  padding-bottom:20px;
+}
+.columna-textos{
+  width: 50%;
+}
+
+.columna-imagen{
+  width: 40%;
 }
 
 .carta h2{
@@ -274,15 +286,14 @@
 }
 
 .carta img{
-  width: 250px;
-  height: 250px;
-  margin-top: 70px;
-  margin-right: 500px;
-  margin-left: auto;
+  width: 110%;
+  height: auto;
+  margin-top: 40px;
+  margin-right: 0;
+  margin-left: 10px;
 }
 
 .boton-compra{
-  position: absolute;
   background-color: #111111;
   color: white;
   padding:10px 80px;
@@ -290,9 +301,10 @@
   border-radius: 10px;
   font-family: "Circular Black";
   margin-left: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 20px;
   transition: 0.3s;
+  margin-bottom: 20px;
 }
 
 .boton-compra:hover{
@@ -301,21 +313,66 @@
   cursor: pointer;
 }
 
-.boton-info{
-  border-radius: 10px;
-  color: #fff;
-  background-color: #1b4332;
-  text-decoration: none;
-  margin-left: 20px;
-  margin-top: 20px;
-  padding: 10px 10px;
-  transition: 0.3s;
+@media (max-width: 1000px)
+{
+  .carta{
+    width: 60%;
+  }
 }
 
-.boton-info:hover{
-  color: #fff;
-  background-color: #133024;
-  cursor: pointer;
+@media (max-width: 800px)
+{
+  .carta{
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 650px)
+{
+  .carta:not(:last-child){
+    width: 95%;
+    margin-top: 30%;
+  }
+
+  .carta:not(:first-child){
+    width: 95%;
+    margin-bottom: 20px;
+    margin-top: 10%;
+  }
+
+  .carta h2{
+    font-size: 200%;
+  }
+
+  .carta p{
+    font-size: 100%;
+  }
+
+  .carta h6{
+    font-size: 70%;
+  }
+
+  .carta img{
+    margin-top: 60px;
+  }
+
+  .columna-textos{
+    width: 48%;
+  }
+
+  .boton-compra{
+    background-color: #111111;
+    color: white;
+    padding:10px 80%;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: "Circular Black";
+    margin-top: 30px;
+    font-size: 20px;
+    transition: 0.3s;
+    margin-bottom: 20px;
+  }
 }
 
 /* DETALLE PRODUCTO */
