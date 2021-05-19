@@ -242,7 +242,6 @@
 
 .contenido{
   display: flex;
-  flex-wrap: wrap;
 }
 
 .carta{
