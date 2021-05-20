@@ -37,8 +37,8 @@
         </div>
       </nav>
     <div class="banner-inicio zoom">
-      <h2>FRASE PARA BANNER</h2>
-      <p>Subtitulo para banner</p>
+      <h2>HORA DE RECICLAR</h2>
+      <p>Relojes ecológicos</p>
     </div>
 
     <div class="seccion1">
@@ -116,26 +116,41 @@
       var scroll = $(window).scrollTop();
       var isChrome = window.chrome;  
 
-      if(scroll <= 250 && isChrome)
-      {
-        $(".zoom").css({
-          "backgroundSize": (500 + scroll/10) + "px",
-        })
-        $(".zoom h2").css({
-          "font-size": (400 + scroll/20) + "%",
-        })
-        $(".zoom p").css({
-         "font-size": (300 + scroll/20) + "%"
-        })
+      if(screen.width >= 800){
+        if(scroll <= 250 && isChrome)
+        {
+          $(".zoom h2").css({
+            "font-size": (400 + scroll/20) + "%",
+          })
+          $(".zoom p").css({
+          "font-size": (300 + scroll/20) + "%"
+          })
+        }
+        if(scroll >= 400 && scroll <= 1400)
+        {
+          $(".giro-reloj").css({
+            WebkitTransform: 'rotate(' + 90 + scroll/30 + 'deg)'
+          })
+        }
       }
-      if(scroll >= 400 && scroll <= 1400)
+      else
       {
-        $(".giro-reloj").css({
-          WebkitTransform: 'rotate(' + 90 + scroll/30 + 'deg)'
-        })
+        if(scroll <= 250 && isChrome)
+        {
+          $(".zoom h2").css({
+            "font-size": (300 + scroll/20) + "%",
+          })
+          $(".zoom p").css({
+            "font-size": (200 + scroll/20) + "%"
+          })
+        }
+        if(scroll >= 400 && scroll <= 1400)
+        {
+          $(".giro-reloj").css({
+            WebkitTransform: 'rotate(' + 90 + scroll/30 + 'deg)'
+          })
+        }
       }
-      
-
     });
 
     function horScroll() {

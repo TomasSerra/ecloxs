@@ -90,6 +90,48 @@
   font-family: "Circular Black";
 }
 
+@media (max-width: 1130px)
+{
+  .banner-inicio{
+    background-size: 400px;
+    background-position-y: 120%;
+  }
+}
+
+@media (max-width: 1000px)
+{
+  .banner-inicio{
+    background-size: 350px;
+    background-position-y: 130%;
+  }
+}
+
+@media (max-width: 800px)
+{
+  .banner-inicio{
+    background-size: 300px;
+    background-position-y: 110%;
+    background-position-x: 50%;
+  }
+
+  .banner-inicio h2{
+    padding-top: 80px;
+    font-size: 300%;
+    font-family: "Circular Black";
+    text-align: center;
+    padding-left: 0px;
+  }
+  
+  .banner-inicio p{
+    padding-top: 0%;
+    font-size: 200%;
+    font-family: "Circular Black";
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+
+
 /* SECCION 1 */
 
 .seccion1{
