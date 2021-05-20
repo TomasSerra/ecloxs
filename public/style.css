@@ -574,12 +574,13 @@ footer svg{
   transform: translate(-50%);
   background-color: #52b687;
   padding: 20px;
-  font-size: 80px;
+  font-size: 7vw;
   color: #111111;
   border-radius: 30px;
   text-align: center;
   width: 50%;
   margin-bottom: 100px;
+  text-align: center;
 }
 
 .seccion-nosotros{
@@ -610,6 +611,22 @@ footer svg{
   color: #52b687;
   width: 50%;
   opacity: 100%;
+}
+
+@media (max-width: 800px)
+{
+  .titulo-nosotros{
+    font-size: 50px;
+    padding: 20px 40px;
+    width: 90%;
+    margin-bottom: 70px;
+  }
+
+  .seccion-nosotros hr{
+    padding-top: 3px;
+    width: 90%;
+  }
+
 }
 /* LINKS HEADER */
 
