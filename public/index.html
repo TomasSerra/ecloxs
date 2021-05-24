@@ -5,15 +5,15 @@
     <title>eCloxs - INICIO</title>
     <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./vectores/isotipo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </head>
 
-  <body class="body">
+  <body class="body responisve-ancho">
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark header responisve-ancho">
       <div class="container-fluid">
         <img src="./vectores/logotipo.svg"/>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,18 +36,18 @@
           </ul>
         </div>
       </nav>
-    <div class="banner-inicio zoom">
+    <div class="banner-inicio zoom responisve-ancho">
       <h2>HORA DE RECICLAR</h2>
       <p>Relojes ecológicos</p>
     </div>
 
-    <div class="seccion1">
-      <div class="row align-items-center">
-        <div class="col-md-12 col-lg-4 columna-reloj zoom">
+    <div class="seccion1 responisve-ancho">
+      <div class="row align-items-center responisve-ancho" style="padding-right: 0;">
+        <div class="col-md-12 col-lg-4 columna-reloj zoom responisve-ancho" style="padding-right: 0;">
         <img src="./img/Reloj2_Mesa de trabajo 1.png">
       </div>
-      <div class="col-md-12 col-lg-8 texto-seccion1">
-        <div class="row">
+      <div class="col-md-12 col-lg-8 texto-seccion1 responisve-ancho" style="padding-right: 0;">
+        <div class="row responisve-ancho" style="padding-right: 0;">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet commodi ipsa quia delectus earum aspernatur in fugit assumenda repellat? Est voluptas deserunt neque molestias, voluptate natus aut quasi blanditiis assumenda?</p>
           <a class="btn" href="comprar.html" role="button">Comprar ></a>
         </div>
@@ -56,14 +56,14 @@
     </div>
     </div>
 
-    <div class="caracteristicas">
+    <div class="caracteristicas responisve-ancho">
       <div class="container-caracteristicas">
         <h2 class="texto-caracteristicas">CARACTERÍSTICAS</h2>
       <img class="giro-reloj" src="./img/Reloj2_Mesa de trabajo 1.png"/>
       </div>
     </div>
 
-    <div class="seccion2">
+    <div class="seccion2 responisve-ancho">
       <div class="titulo-reciclar">RECI<br>CLA<br>DO</div>
       <div class="fondo-verde">
         <div>
@@ -74,7 +74,7 @@
       </div>
     </div>
 
-     <footer id="contacto">
+     <footer id="contacto" class="responisve-ancho">
        <h2>Contacto</h2>
        <p>¡Cualquier duda que tengas consultanos!</p>
        <ul>
@@ -104,12 +104,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
     window.onload=horScroll;
+    window.onload=ancho;
+
     var isChrome = window.chrome; 
-    if(isChrome) { 
-     
-    } else {
-    
-    } 
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
       var isChrome = window.chrome;  
@@ -136,10 +133,10 @@
         if(scroll <= 250 && isChrome)
         {
           $(".zoom h2").css({
-            "font-size": (300 + scroll/20) + "%",
+            "font-size": (200 + scroll/20) + "%",
           })
           $(".zoom p").css({
-            "font-size": (200 + scroll/20) + "%"
+            "font-size": (180 + scroll/20) + "%"
           })
         }
         if(scroll >= 400 && scroll <= 1400)
@@ -159,6 +156,15 @@
             $body.scrollLeft(0);
         }
       })
+    }
+
+    function ancho()
+    {
+      var anchoPantalla = screen.width;
+      console.log(anchoPantalla);
+      $(".responsive-ancho").css({
+            "width": anchoPantalla + "px"
+          })
     }
   </script>
   

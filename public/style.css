@@ -110,13 +110,14 @@
 {
   .banner-inicio{
     background-size: 300px;
-    background-position-y: 110%;
+    background-position-y: 230%;
     background-position-x: 50%;
+    height: 400px;
   }
 
   .banner-inicio h2{
     padding-top: 80px;
-    font-size: 300%;
+    font-size: 200%;
     font-family: "Circular Black";
     text-align: center;
     padding-left: 0px;
@@ -124,23 +125,21 @@
   
   .banner-inicio p{
     padding-top: 0%;
-    font-size: 200%;
+    font-size: 180%;
     font-family: "Circular Black";
     text-align: center;
     padding-left: 0px;
   }
 }
 
-
 /* SECCION 1 */
 
 .seccion1{
   background-color: #52b687;
-  width: 100%;
   height: fit-content;
   position: relative;
   top: 450px;
-  height:fit-content;
+  padding: 0px;
 }
 
 .seccion1 p{
@@ -179,6 +178,48 @@
   padding-right: 8%;
 }
 
+@media(max-width: 800px)
+{
+  .seccion1 img{
+    width: 70%;
+    padding: 0px;
+    left: 50%;
+    margin-top: 70px;
+    position: relative;
+    left: 50%;
+    transform: translate(-55%);
+    padding-bottom: 40px;
+  }
+
+  .seccion1 p{
+    color: white;
+    font-size: 140%;
+    padding-left: 10%;
+    padding-right: 12%;
+    text-align: justify;
+  }
+
+  .seccion1 a{
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    padding-top: 10px;
+    text-decoration: none;
+    background-color: white;
+    color: #52b687;
+    border-radius: 0px;
+    font-size: 25px;
+    font-family: "Circular Black";
+    position: relative;
+    left: 50%;
+    transform: translate(-52%);
+    margin-bottom: 40px;
+
+  }
+
+}
+
 /* CARACTERISTICAS */
 
 .container-caracteristicas{
@@ -187,7 +228,6 @@
 }
 
 .caracteristicas{
-  width: 100%;
   background-color: #111111;
   background-image: url(./img/banner-caracteristicas_Mesa\ de\ trabajo\ 1.jpg);
   background-size: 90%;
@@ -251,7 +291,6 @@
 
 .seccion2{
   background-color: #111111;
-  width: 100%;
   height: 1000px;
   top: 400px;
   position: relative;
