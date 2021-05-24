@@ -188,7 +188,6 @@ html{
   .seccion1 img{
     width: 60%;
     padding: 0px;
-    left: 50%;
     margin-top: 70px;
     position: relative;
     left: 50%;
@@ -267,6 +266,20 @@ html{
   margin-right: 0px;
 
 }
+
+.caracteristicas-mobile{
+  margin-top: 50px;
+}
+
+#caracteristicaId
+{
+  color: #ffffff;
+  font-size: 15vw;
+  font-family: "Circular Black";
+  text-align: center;
+  margin-left: 5%;
+}
+
 @media (max-width: 800px)
 {
   .texto-caracteristicas{
@@ -278,17 +291,30 @@ html{
   }
 
   .caracteristicas{
-    background-size: 100%;
-    height: 500px;
+    background-color: #111111;
+    background-image: url();
+    background-size: 90%;
+    object-fit: cover;
+    height: 850px;
+    position: relative;
+    background-repeat: no-repeat;
     background-position-x: 40%;
-    background-position-y: 20%;
+    background-position-y: -20%;
+    top:450px;
+  }
+
+  .container-caracteristicas{
+    padding: 0;
   }
 
   .caracteristicas img{
-    width: 27%;
-    top:100%;
+    width: 60%;
+    top:150%;
     position: relative;
-    transform: translate(-50% 50%);
+    right: 0%;
+    left: 23%;
+    margin-left: 0px;
+    margin-top: 50px;
   }
 }
 
