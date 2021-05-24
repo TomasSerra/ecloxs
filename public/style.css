@@ -17,6 +17,7 @@
 .body{
   background-color: #111111;
   overflow-x: hidden;
+  position: relative;
 }
 
 html{
@@ -185,7 +186,7 @@ html{
 @media(max-width: 800px)
 {
   .seccion1 img{
-    width: 70%;
+    width: 60%;
     padding: 0px;
     left: 50%;
     margin-top: 70px;
@@ -683,6 +684,36 @@ footer svg{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 800px)
+{
+  footer ul{
+    display: initial;
+    list-style:none;
+    justify-content: space-around;
+    padding-top: 60px;
+    text-align: center;
+  }
+
+  footer li{
+    padding-bottom: 30px;
+  }
+
+  footer h2{
+    font-size: 40px;
+    font-family: "Circular Black";
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+  }
+
+  footer p{
+    font-size: 15px;
+    text-align: center;
+    color: #dadada;
+    padding-top: 20px;
+  }
 }
 
 /* NOSOTROS */
