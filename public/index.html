@@ -59,7 +59,7 @@
 
     <div class="caracteristicas responisve-ancho">
       <div class="container-caracteristicas">
-        <h2 class="texto-caracteristicas">CARACTERÍSTICAS</h2>
+        <h2 class="texto-caracteristicas">NUESTROS RELOJES</h2>
       <img class="giro-reloj" src="./img/Reloj2_Mesa de trabajo 1.png"/>
       <div class="caracteristicas-mobile">
         <p id="caracteristicaId"></p>
@@ -109,7 +109,7 @@
   <script>
     window.onload=horScroll;
     window.onload=ancho;
-    window.onload=caracteristicasResposnive;
+    window.onload=resposniveMobile;
 
     var isChrome = window.chrome; 
     $(window).scroll(function(){
@@ -171,15 +171,15 @@
           })
     }
 
-    function caracteristicasResposnive ()
+    function resposniveMobile ()
     {
       var palabras = document.getElementById("caracteristicaId");
       var tituloReciclado = document.getElementById("tituloReciclar");
 
       if(screen.width <= 800)
       {
-        palabras.innerHTML = "Elegante" + "<br />" + "Moderno" + "<br />" + "Ecológico" + "<br />" + "Calidad"
-        tituloReciclado.innerHTML = "RECICLADO"
+        palabras.innerHTML = "Elegantes" + "<br />" + "Modernos" + "<br />" + "Reciclados"
+        tituloReciclado.innerHTML = "SUSTENTABLES"
       }
       else
       {

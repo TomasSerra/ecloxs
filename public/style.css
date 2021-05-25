@@ -115,9 +115,9 @@ html{
 {
   .banner-inicio{
     background-size: 300px;
-    background-position-y: 230%;
+    background-position-y: 270%;
     background-position-x: 50%;
-    height: 400px;
+    height: 370px;
   }
 
   .banner-inicio h2{
@@ -190,7 +190,7 @@ html{
     padding: 0px;
     margin-top: 70px;
     position: relative;
-    left: 50%;
+    left: 51%;
     transform: translate(-55%);
     padding-bottom: 40px;
   }
@@ -219,7 +219,10 @@ html{
     left: 50%;
     transform: translate(-52%);
     margin-bottom: 40px;
+  }
 
+  .seccion1{
+    top: 400px;
   }
 
 }
@@ -284,8 +287,7 @@ html{
 {
   .texto-caracteristicas{
     width: 80%;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-radius: 30px;
     font-size: 8vw;
     padding: 15px 5px;
   }
@@ -295,16 +297,17 @@ html{
     background-image: url();
     background-size: 90%;
     object-fit: cover;
-    height: 850px;
+    height: 800px;
     position: relative;
     background-repeat: no-repeat;
     background-position-x: 40%;
     background-position-y: -20%;
-    top:450px;
+    top:400px;
   }
 
   .container-caracteristicas{
     padding: 0;
+    padding-top: 30px;
   }
 
   .caracteristicas img{
@@ -351,15 +354,21 @@ html{
 }
 
 .fondo-verde{
+  background-image: url(./vectores/reciclar-fondo_Mesa\ de\ trabajo\ 1.svg);
   width: 70%; 
   height: 60%; 
-  background: #52b687;
+  background-color: #52b687;
   position: absolute;
   right: 0px;
   left: auto;
   border-top-left-radius: 100px;
   display: flex;
   align-items: center;
+  background-size: 70%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position-x: 170%;
+  background-position-y: 0%;
 }
 
 @media(max-width: 800px)
@@ -367,16 +376,16 @@ html{
   .seccion2{
     background-color: #111111;
     height: 900px;
-    top: 400px;
+    top: 380px;
     position: relative;
     display: flex;
     flex-direction: column;
   }
   
   .fondo-verde{
+    background-image: url(./vectores/reciclar-fondo_Mesa\ de\ trabajo\ 1.svg);
     width: 100%; 
     height: fit-content; 
-    background: #52b687;
     position: relative;
     right: 0px;
     left: auto;
@@ -385,14 +394,20 @@ html{
     border-top-right-radius: 50px;
     display: flex;
     align-items: center;
-    padding: 50px 0px
+    padding: 50px 0px;
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position-x: 100px;
+    background-position-y: 280%;
+    background-blend-mode:difference;
   }
 
   .titulo-reciclar{
-    font-size: 15vw;
+    font-size: 11.5vw;
     color: #52b687;
     font-family: "Circular Black";
-    margin-left: 20px;
+    margin-left: 23px;
     margin-top: 10px;
     line-height: 100px;
     height: fit-content;
