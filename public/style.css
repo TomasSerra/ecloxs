@@ -362,6 +362,51 @@ html{
   align-items: center;
 }
 
+@media(max-width: 800px)
+{
+  .seccion2{
+    background-color: #111111;
+    height: 900px;
+    top: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .fondo-verde{
+    width: 100%; 
+    height: fit-content; 
+    background: #52b687;
+    position: relative;
+    right: 0px;
+    left: auto;
+    bottom: 0px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 50px 0px
+  }
+
+  .titulo-reciclar{
+    font-size: 15vw;
+    color: #52b687;
+    font-family: "Circular Black";
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 100px;
+    height: fit-content;
+    text-align: center;
+  }
+
+  .seccion2 p{
+    font-size: 7vw;
+    color: #ffffff;
+    font-family: "Circular Black";
+    margin-left: 50px;
+  }
+}
+
 /* COMPRAR */
 
 .container-productos{

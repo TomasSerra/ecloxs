@@ -68,7 +68,7 @@
     </div>
 
     <div class="seccion2 responisve-ancho">
-      <div class="titulo-reciclar">RECI<br>CLA<br>DO</div>
+      <div class="titulo-reciclar" id="tituloReciclar"></div>
       <div class="fondo-verde">
         <div>
           <p>- Texto sobre como reciclamos</p>
@@ -174,10 +174,16 @@
     function caracteristicasResposnive ()
     {
       var palabras = document.getElementById("caracteristicaId");
+      var tituloReciclado = document.getElementById("tituloReciclar");
 
       if(screen.width <= 800)
       {
         palabras.innerHTML = "Elegante" + "<br />" + "Moderno" + "<br />" + "Ecológico" + "<br />" + "Calidad"
+        tituloReciclado.innerHTML = "RECICLADO"
+      }
+      else
+      {
+        tituloReciclado.innerHTML = "RECI"+ "<br />" +"CLA"+ "<br />" +"DO"
       }
     }
 
