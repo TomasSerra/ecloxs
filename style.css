@@ -1030,3 +1030,71 @@ footer svg{
   border-radius: 20px;
   padding-bottom:20px;
 }
+
+@media (max-width: 800px)
+{
+.carta-agradecimiento{
+  width: 90%;
+  height: fit-content;
+  background-color: #52b687;
+  margin-top: 110px;
+  border-radius: 20px;
+  padding-bottom:20px;
+}
+}
+
+.boton-agradecimiento{
+  position: relative;
+  color: white;
+  padding:10px 80px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: "Circular Black";
+  margin-left: 20px;
+  font-size: 20px;
+  transition: 0.3s;
+  margin-top: 20px;
+  background-color: #1b4332;
+}
+
+.boton-agradecimiento:hover{
+  background-color: #265e47;
+  color: white;
+  cursor: pointer;
+  
+}
+
+@media (max-width: 800px)
+{
+.boton-agradecimiento{
+  position: relative;
+  color: white;
+  padding:10px 80px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: "Circular Black";
+  font-size: 15px;
+  transition: 0.3s;
+  margin-top: 20px;
+  margin-left: 0px;
+  background-color: #1b4332;
+}
+}
+
+.titulo-agradecimiento{
+  text-align: center; 
+  margin-top: 30px;
+  font-family: Circular Black;
+   font-size: 60px; color: white;
+   padding: 0px 20px;
+}
+
+@media (max-width: 800px)
+{
+.titulo-agradecimiento{
+  text-align: center; 
+  margin-top: 30px;
+  font-family: Circular Black;
+   font-size: 40px; color: white;
+}
+}
