@@ -331,6 +331,10 @@ html{
   top:450px;
 }
 
+.fondo-caracteristicas{
+  background-color: #111111;
+}
+
 .caracteristicas img{
   margin-top: 7%;
   margin-left: 38%;
