@@ -155,9 +155,9 @@ html{
   background-color: #111111;
   width: 100%;
 	height: 500px;
-	background-image: url(./img/Reloj1_Mesa\ de\ trabajo\ 1.png);
-	background-size: 500px;
-  background-position-x: 110%;
+	background-image: url(./img/circ-blanco.png);
+	background-size: 600px;
+  background-position-x: 115%;
   background-position-y: 70px;
   background-repeat: no-repeat;
   color: white;
@@ -198,7 +198,7 @@ html{
 @media (max-width: 800px)
 {
   .banner-inicio{
-    background-size: 300px;
+    background-size: 310px;
     background-position-y: 270%;
     background-position-x: 50%;
     height: 370px;
@@ -260,7 +260,7 @@ html{
 }
 
 .seccion1 img{
-  width: 400px;
+  width: 430px;
   padding-top: 14%;
   padding-bottom: 14%;
   padding-left: 15%;
@@ -270,7 +270,7 @@ html{
 @media(max-width: 800px)
 {
   .seccion1 img{
-    width: 60%;
+    width: 70%;
     padding: 0px;
     margin-top: 70px;
     position: relative;
@@ -332,9 +332,9 @@ html{
 }
 
 .caracteristicas img{
-  margin-top: 9%;
-  margin-left: 40%;
-  width: 25%;
+  margin-top: 7%;
+  margin-left: 38%;
+  width: 30%;
 }
 
 .texto-caracteristicas{
@@ -395,11 +395,11 @@ html{
   }
 
   .caracteristicas img{
-    width: 60%;
-    top:150%;
+    width: 75%;
+    top:140%;
     position: relative;
     right: 0%;
-    left: 23%;
+    left: 16%;
     margin-left: 0px;
     margin-top: 50px;
   }
@@ -574,11 +574,11 @@ html{
 }
 
 .imagen-producto-reloj2{
-  width: 125%;
+  width: 110%;
   height: auto;
   margin-top: 40px;
   margin-right: 30px;
-  margin-left: -15px;
+  margin-left: 0px;
 }
 
 
@@ -677,13 +677,13 @@ html{
   }
 
   .imagen-producto-reloj1{
-    width: 110%;
-    margin-top: 60px;
+    width: 120%;
+    margin-top: 40px;
   }
   
   .imagen-producto-reloj2{
-    width: 125%;
-    margin-top: 60px;
+    width: 120%;
+    margin-top: 40px;
     margin-right: 30px;
     margin-left: 0px;
   }
@@ -1020,4 +1020,13 @@ footer svg{
     width: 90%;
   }
 
+}
+
+.carta-agradecimiento{
+  width: 90%;
+  height: fit-content;
+  background-color: #52b687;
+  margin-top: 150px;
+  border-radius: 20px;
+  padding-bottom:20px;
 }
