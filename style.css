@@ -601,6 +601,30 @@ html{
   color: white;
   cursor: pointer;
 }
+.sel-color{
+  margin-left: 20px;
+}
+.sel-color h6{
+  margin-top: 20px;
+  color: #000000;
+  font-size: 100%;
+  font-family: "Circular Black";
+  text-align: left;
+}
+.sel-color button{
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+#boton-blanco{
+  background-color: white;
+  border-color: black;
+}
+#boton-negro{
+  background-color: #000000;
+  border-color: white;
+}
 
 @media (max-width: 1000px)
 {
@@ -720,8 +744,7 @@ html{
   margin-left: 20px;
   font-family: "Circular Black";
 }
-
-.carta-detalle h6{
+.carta-detalle .texto-carta{
   color: #1b4332;
   font-size: 100%;
   margin-left: 20px;
@@ -729,6 +752,16 @@ html{
   text-align: left;
   padding-bottom: 10px;
 }
+
+
+/*.carta-detalle h6{
+  color: #1b4332;
+  font-size: 100%;
+  margin-left: 20px;
+  font-family: "Circular Black";
+  text-align: left;
+  padding-bottom: 10px;
+}*/
 
 .carta-detalle h5{
   color: #111111;

@@ -44,8 +44,13 @@
                         <a class="boton-volver" href="comprar.html">< Volver</a>
                         <h2>Hexagonal</h2>
                         <p>$1699,00</p>
-                        <h6>Modelo hexagonal, hecho de madera reciclada, barnizada y perfectamente trabajada. Posee unas finas agujas negras y un borde blanco elegante. Moderno y minimalista.</h6>
-                        <a class="boton-compra-detalles" href="https://mpago.la/28L9Mbm">
+                        <h6 class="texto-carta">Modelo hexagonal, hecho de madera reciclada, barnizada y perfectamente trabajada. Posee unas finas agujas negras y un borde blanco elegante. Moderno y minimalista.</h6>
+                        <div class="sel-color">
+                            <h6>SELECCIONAR COLOR</h6>
+                            <button class="boton-color" id="boton-blanco"></button>
+                            <button class="boton-color" id="boton-negro"></button>
+                        </div>
+                        <a class="boton-compra-detalles" id="boton-compra" href="https://mpago.la/28L9Mbm">
                             Comprar
                             <img src="./img/mercado-pago.png">
                         </a>
@@ -60,7 +65,7 @@
                         <h5>Una vez realizado el pago, mandar foto del comprobante, dirección de envío, nombre y apellido vía mail a ecloxs@gmail.com</h5>
                     </div>
                     <div class= "col-3">
-                        <img class="imagen-producto" src="./img/Reloj hexagonal.png">
+                        <img id="foto-reloj-hex" class="imagen-producto" src="./img/hex-blanco.png">
                     </div>
                 </div>
             </div>
@@ -78,6 +83,18 @@
             speed: 1000,
         });
     }
+    var foto = document.getElementById('foto-reloj-hex');
+    var boton_blanco = document.getElementById('boton-blanco');
+    var boton_negro = document.getElementById('boton-negro');
+    boton_blanco.addEventListener("click",function(){
+        foto.src = "./img/hex-blanco.png";
+        document.getElementById('boton-compra').href = "https://mpago.la/28L9Mbm";
+    },false);
+    boton_negro.addEventListener("click",function(){
+        foto.src = "./img/hex-negro.png";
+        document.getElementById('boton-compra').href = "https://mpago.la/1hTyugu";
+    },false)
+
     </script>
   
 </html>
