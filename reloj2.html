@@ -44,7 +44,7 @@
                         <a class="boton-volver" href="comprar.html">< Volver</a>
                         <h2 id="title">Hexagonal (Blanco)</h2>
                         <p>$1699,00</p>
-                        <h6 class="texto-carta">Modelo hexagonal, hecho de madera reciclada, barnizada y perfectamente trabajada. Posee unas finas agujas negras y un borde blanco elegante. Moderno y minimalista.</h6>
+                        <h6 class="texto-carta" id="descripcion">Modelo hexagonal, hecho de madera reciclada, barnizada y perfectamente trabajada. Posee unas finas agujas negras y un borde blanco elegante. Moderno y minimalista.</h6>
                         <div class="sel-color">
                             <h6>SELECCIONAR COLOR</h6>
                             <button class="boton-color" id="boton-blanco"></button>
@@ -90,11 +90,13 @@
         foto.src = "./img/hex-blanco.png";
         document.getElementById('boton-compra').href = "https://mpago.la/28L9Mbm";
         document.getElementById("title").innerHTML = "Hexagonal (Blanco)";
+        document.getElementById("descripcion").innerHTML = "Modelo hexagonal, hecho de madera reciclada, barnizada y perfectamente trabajada. Posee unas finas agujas negras y un borde blanco elegante. Moderno y minimalista."
     },false);
     boton_negro.addEventListener("click",function(){
         foto.src = "./img/hex-negro.png";
         document.getElementById('boton-compra').href = "https://mpago.la/1hTyugu";
         document.getElementById("title").innerHTML = "Hexagonal (Negro)";
+        document.getElementById("descripcion").innerHTML = "Modelo hexagonal, hecho de madera reciclada, barnizada y perfectamente trabajada. Posee unas finas agujas negras y un borde negro elegante. Moderno y minimalista."
     },false)
 
     </script>
